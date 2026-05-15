@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | Prince Tyagi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+background:black;
+color:white;
+padding:40px;
+background:url("images/bg.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+
+/* TITLE */
+
+.main-title{
+text-align:center;
+font-size:70px;
+margin-bottom:60px;
+color:#00ff88;
+text-shadow:0 0 20px #00ff88;
+}
+
+/* GRID */
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+gap:35px;
+}
+
+/* CARD */
+
+.project-card{
+background:rgba(0,0,0,0.8);
+border:1px solid #00ff88;
+border-radius:25px;
+padding:35px;
+box-shadow:0 0 25px rgba(0,255,120,0.2);
+transition:0.3s;
+backdrop-filter:blur(10px);
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 40px #00ff88;
+}
+
+/* HEADINGS */
+
+.project-card h2{
+font-size:35px;
+margin-bottom:20px;
+color:#00ff88;
+text-shadow:0 0 10px #00ff88;
+}
+
+.project-card h3{
+margin-top:25px;
+margin-bottom:12px;
+color:#00ff88;
+}
+
+/* TEXT */
+
+.project-card p,
+.project-card li{
+line-height:1.8;
+font-size:17px;
+color:#ddd;
+}
+
+.project-card ul{
+padding-left:20px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#00ff88;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+box-shadow:0 0 20px #00ff88;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.main-title{
+font-size:45px;
+}
+
+.project-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 class="main-title">
+AWS & CYBERSECURITY PROJECTS
+</h1>
+
+<div class="project-grid">
+
+<!-- EC2 -->
+
+<div class="project-card">
+
+<h2>AWS EC2 Web Hosting</h2>
+
+<h3>Description</h3>
+
+<p>
+Hosted a static HTML website on AWS EC2 Ubuntu instance
+using Apache Web Server.
+</p>
+
+<h3>Services Used</h3>
+
+<ul>
+<li>AWS EC2</li>
+<li>Security Groups</li>
+<li>Apache</li>
+</ul>
+
+<h3>Skills</h3>
+
+<ul>
+<li>Linux</li>
+<li>AWS</li>
+<li>SSH</li>
+<li>Web Hosting</li>
+</ul>
+
+<h3>Output</h3>
+
+<p>
+Website successfully accessible using public IP.
+</p>
+
+<a href="#" class="btn">
+VIEW PROJECT
+</a>
+
+</div>
+
+<!-- S3 -->
+
+<div class="project-card">
+
+<h2>AWS S3 Static Website</h2>
+
+<h3>Description</h3>
+
+<p>
+Hosted static website using Amazon S3 bucket with public access.
+</p>
+
+<h3>Services Used</h3>
+
+<ul>
+<li>AWS S3</li>
+<li>Bucket Policy</li>
+<li>Static Website Hosting</li>
+</ul>
+
+<h3>Skills</h3>
+
+<ul>
+<li>AWS</li>
+<li>Cloud Storage</li>
+<li>Hosting</li>
+</ul>
+
+<h3>Output</h3>
+
+<p>
+Website successfully deployed using S3 endpoint.
+</p>
+
+<a href="#" class="btn">
+VIEW PROJECT
+</a>
+
+</div>
+
+<!-- IAM -->
+
+<div class="project-card">
+
+<h2>AWS IAM User Management</h2>
+
+<h3>Description</h3>
+
+<p>
+Configured IAM users, groups and permissions securely.
+</p>
+
+<h3>Services Used</h3>
+
+<ul>
+<li>AWS IAM</li>
+<li>User Groups</li>
+<li>Policies</li>
+</ul>
+
+<h3>Skills</h3>
+
+<ul>
+<li>AWS Security</li>
+<li>User Access Control</li>
+<li>Cloud Security</li>
+</ul>
+
+<h3>Output</h3>
+
+<p>
+Successfully created secure user access management system.
+</p>
+
+<a href="#" class="btn">
+VIEW PROJECT
+</a>
+
+</div>
+
+<!-- NMAP -->
+
+<div class="project-card">
+
+<h2>Nmap Network Scanning</h2>
+
+<h3>Description</h3>
+
+<p>
+Performed network reconnaissance using Nmap scanning tools.
+</p>
+
+<h3>Tools Used</h3>
+
+<ul>
+<li>Nmap</li>
+<li>Kali Linux</li>
+</ul>
+
+<h3>Skills</h3>
+
+<ul>
+<li>Reconnaissance</li>
+<li>Port Scanning</li>
+<li>Network Analysis</li>
+</ul>
+
+<h3>Output</h3>
+
+<p>
+Identified open ports and running services successfully.
+</p>
+
+<a href="#" class="btn">
+VIEW PROJECT
+</a>
+
+</div>
+
+<!-- BURP SUITE -->
+
+<div class="project-card">
+
+<h2>Burp Suite Web Testing</h2>
+
+<h3>Description</h3>
+
+<p>
+Tested web application security using Burp Suite tools.
+</p>
+
+<h3>Tools Used</h3>
+
+<ul>
+<li>Burp Suite</li>
+<li>Proxy</li>
+<li>Repeater</li>
+</ul>
+
+<h3>Skills</h3>
+
+<ul>
+<li>Web Security</li>
+<li>HTTP Requests</li>
+<li>Penetration Testing</li>
+</ul>
+
+<h3>Output</h3>
+
+<p>
+Analyzed web traffic and identified vulnerabilities.
+</p>
+
+<a href="#" class="btn">
+VIEW PROJECT
+</a>
+
+</div>
+
+<!-- WIRESHARK -->
+
+<div class="project-card">
+
+<h2>Wireshark Packet Analysis</h2>
+
+<h3>Description</h3>
+
+<p>
+Captured and analyzed network packets using Wireshark.
+</p>
+
+<h3>Tools Used</h3>
+
+<ul>
+<li>Wireshark</li>
+<li>Packet Sniffer</li>
+</ul>
+
+<h3>Skills</h3>
+
+<ul>
+<li>Packet Analysis</li>
+<li>Network Monitoring</li>
+<li>Traffic Inspection</li>
+</ul>
+
+<h3>Output</h3>
+
+<p>
+Successfully analyzed network communication packets.
+</p>
+
+<a href="#" class="btn">
+VIEW PROJECT
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
