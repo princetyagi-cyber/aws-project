@@ -73,3 +73,56 @@ body {
   animation: pulse 3s infinite;
 }
 }
+@media screen and (max-width: 768px){
+
+nav{
+flex-direction:column;
+gap:20px;
+padding:20px;
+}
+
+.hero{
+flex-direction:column;
+padding:20px;
+text-align:center;
+}
+
+.hero-left{
+width:100%;
+}
+
+.hero-left h1{
+font-size:60px;
+line-height:70px;
+}
+
+.hero-left h2{
+font-size:35px;
+}
+
+.hero-left p{
+font-size:20px;
+line-height:35px;
+}
+
+.center img{
+width:100%;
+height:auto;
+margin-top:30px;
+}
+
+.status-box{
+width:100%;
+margin-top:30px;
+}
+
+.buttons{
+flex-direction:column;
+gap:20px;
+}
+
+.project-grid{
+grid-template-columns:1fr;
+}
+
+}
